@@ -8,7 +8,7 @@ function App() {
     <div>
       <Router>
         <Routes>
-          <Route path="/" Component={utama}></Route>
+          <Route path="/react-portfolio" Component={utama}></Route>
         </Routes>
       </Router>
     </div>
