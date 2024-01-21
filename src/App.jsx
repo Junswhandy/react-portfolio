@@ -1,16 +1,22 @@
 import "./App.css";
 // import About from "./components/About";
-import utama from "./pages/utama";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Contact from "../components/Contact";
+import Header from "../components/Header";
+import Home from "../components/Home";
+import Projects from "../components/Projects";
+import Footer from "../shared/Footer";
+import About from "../components/About";
 
 function App() {
   return (
     <div>
-      <Router>
-        <Routes>
-          <Route path="/react-portfolio" Component={utama}></Route>
-        </Routes>
-      </Router>
+      <Header />
+      <Home />
+      <About />
+      {/* <About /> */}
+      <Projects />
+      <Contact />
+      <Footer />
     </div>
   );
 }
